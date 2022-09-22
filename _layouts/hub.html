@@ -16,14 +16,16 @@ layout: page
       {{ page.description | markdownify }}
       <section class="links">
         <h2>Links</h2>
+        {% raw %}
         {% if page.citekey %}
-        {% notice page.citekey %}
+        {% nocite page.citekey %}
         {% bibliography --cited --template pubhublinkstemplate %}
         {% else %}
         <ol class="link-list">
           {% include hubadditionallinks.html %}
         </ol>
         {% endif %}
+        {% endraw %}
       </section>
       {{ content }}
       <section class="abs-bibtex">
