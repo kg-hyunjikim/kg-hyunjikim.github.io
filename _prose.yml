@@ -19,20 +19,15 @@ prose:
           element: "text"
           label: "Title"
           value: "제목을 입력하세요"
-      - name: "tags"
-        field:
-          element: "checkbox"
-          label: "Disqus Comments"
-          value: true
       - name: "author"
         field:
           element: "text"
-          label: "작성자명"
+          label: "Author"
           value: "작성자명을 입력하세요"
       - name: "comments"
         field:
           element: "checkbox"
-          label: "Published"
+          label: "Allow Comments"
           value: True
       - name: "published"
         field:
