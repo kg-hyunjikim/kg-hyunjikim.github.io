@@ -8,3 +8,57 @@ prose:
     - _config.yml
     - /_layouts
     - /_includes
+  metadata:
+    _posts:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "post"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          value: "제목을 입력하세요"
+      - name: "tags"
+        field:
+          element: "checkbox"
+          label: "Disqus Comments"
+          value: true
+      - name: "author"
+        field:
+          element: "text"
+          label: "작성자명"
+          value: "작성자명을 입력하세요"
+      - name: "comments"
+        field:
+          element: "checkbox"
+          label: "Published"
+          value: True
+      - name: "published"
+        field:
+          element: "checkbox"
+          label: "Published"
+          value: false
+      - name: "tags"
+        field:
+          element: "multiselect"
+          label: "Add Tags"
+          placeholder: "Choose Tags"
+          alterable: true
+          options:
+            - name: "Docker"
+              value: "docker"
+            - name: "Linux"
+              value: "linux"
+            - name: "Jekyll"
+              value: "jekyll"
+            - name: "CLI"
+              value: "cli"
+            - name: "Humor"
+              value: "humor"
+            - name: "Ruby"
+              value: "ruby"
+            - name: "Javascript"
+              value: "javascript"
+            - name: "Python"
+              value: "python"
